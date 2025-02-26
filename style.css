@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+body{
+    background-color: #D6AD08;
+    align-items: center;
+    width: 50%;
+    display: block;
+    margin-left: 24em;
+    justify-items: center;
+                      
+}
+h1{
+    font-weight: bold;
+    text-align: center;
+    color: aliceblue;
+}
+
+.main{
+    background-color: rgb(255, 255, 255);
+    align-items: left;
+    display: flex;
+    justify-items: center;
+
+}
+.left-side{
+    padding-left: 6pt;
+    max-width: 35%;
+    display: block;
+    justify-items: left;
+}
+
+.cand-images img{
+    max-width: 50%;
+    margin: 2em;
+    border-bottom-right-radius: 6em;
+    border-bottom-left-radius: 6em;
+    
+}
+.left-side-content{
+    background-color: lightgray;
+    padding-left: 6pt;
+    margin-left: -6pt;
+    margin-top: -15pt;
+    padding-bottom: 6pt;
+    padding-right: 6pt;
+}
+h3{
+    margin-top: 25pt;
+    margin-bottom: -2pt;
+    font-size: 100%;
+}
+.edu1{
+    margin-top: 16pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    border-left: 2pt solid #D6AD08;
+
+}
+
+.edu-body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    margin-left: 6pt;
+}
+
+.edu-heading{
+    margin-top: 16pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80%;
+    font-weight: bold;
+    margin-left: 2pt;
+    text-transform: uppercase;
+}
+
+.contact_detalis p{
+    margin: 4pt;
+    line-break: auto;
+    text-align: left;
+}
+.contact_detalis p img{
+    max-width: 15pt;
+    margin-top: 2pt;
+    image-resolution: 275dpi;
+}
+
+.right-side{
+    padding-left: 50pt;
+    display: block;
+
+}
+.cend-detalis {
+    margin-bottom: 8em;
+    margin-top: -10em;
+    align-items: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    justify-items: flex-end;
+    padding-right: 2em;
+    text-transform: uppercase;
+    
+}
+
+.hrizental-line{
+    border: 2px solid #D6AD08;
+    margin-top: 3em;
+}
+.exp{
+    margin-top: 12pt;
+    text-align: justify;
+}
+.skils-detalis{
+    margin-top: 2pt;
+    text-align: left;
+    column-count: 2;
+    column-gap: 30px;
+}
