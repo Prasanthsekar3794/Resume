@@ -1,120 +1,118 @@
-*{
+/* Default styles for larger screens */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
     margin: 0;
     padding: 0;
-    align-items: center;
-}
-
-body{
-    background-color: #D6AD08;
-    align-items: center;
-    width: 50%;
-    display: block;
-    margin-left: 24em;
-    justify-items: center;
-                      
-}
-h1{
-    font-weight: bold;
-    text-align: center;
-    color: aliceblue;
-}
-
-.main{
-    background-color: rgb(255, 255, 255);
-    align-items: left;
     display: flex;
-    justify-items: center;
-
-}
-.left-side{
-    padding-left: 6pt;
-    max-width: 35%;
-    display: block;
-    justify-items: left;
+    justify-content: center;
+    align-items: center;
 }
 
-.cand-images img{
-    max-width: 50%;
-    margin: 2em;
-    border-bottom-right-radius: 6em;
-    border-bottom-left-radius: 6em;
-    
-}
-.left-side-content{
-    background-color: lightgray;
-    padding-left: 6pt;
-    margin-left: -6pt;
-    margin-top: -40pt;
-    padding-bottom: 6pt;
-    padding-right: 6pt;
-}
-h3{
-    margin-top: 25pt;
-    margin-bottom: -2pt;
-    font-size: 100%;
-}
-.edu1{
-    margin-top: 16pt;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 100%;
-    border-left: 2pt solid #D6AD08;
-
+.main {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
 }
 
-.edu-body{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 100%;
-    margin-left: 6pt;
+/* Left and Right Side Styling */
+.left-side, .right-side {
+    flex: 1;
+    padding: 20px;
 }
 
-.edu-heading{
-    margin-top: 16pt;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 80%;
+.left-side {
+    background: #ffffff;
+}
+
+.right-side {
+    background: #f0f0f0;
+}
+
+/* Images */
+.cand-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Job Experience Styling */
+.edu1 {
+    margin-bottom: 15px;
+}
+
+.edu-heading {
     font-weight: bold;
-    margin-left: 2pt;
-    text-transform: uppercase;
+    font-size: 1.2em;
 }
 
-.right-side{
-    padding-left: 50pt;
-    display: block;
-
-}
-.cend-detalis {
-    align-items: right;
-    margin-top: 1em;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-weight: bold;
-    justify-items: flex-end;
-    padding-right: 1em;
-    text-transform: uppercase;
-    
-}
-.cend-detalis p img{
-    max-width: 15pt;
-    height: 15px;
-    text-transform: lowercase;
-    image-resolution: 275dpi;
-
+.edu-body {
+    font-size: 1em;
 }
 
-.hrizental-line{
-    border: 2px solid #D6AD08;
-    margin-top: 3em;
+/* Skills & Hobbies */
+.skils-detalis, .hobbi {
+    margin-top: 20px;
 }
-.exp{
-    margin-top: 12pt;
-    text-align: justify;
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-side, .right-side {
+        width: 90%;
+    }
 }
-.skils-detalis{
-    margin-top: -12pt;
-    text-align: left;
-    column-count: 2;
-    column-gap: 30px;
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-side, .right-side {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .edu-heading {
+        font-size: 1em;
+    }
+
+    .edu-body {
+        font-size: 0.9em;
+    }
 }
-.hobbi{
-    margin-top: -10pt;
-    text-align: left;
+
+@media screen and (max-width: 480px) {
+    .main {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .left-side, .right-side {
+        padding: 10px;
+        width: 100%;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+
+    .edu-heading {
+        font-size: 0.9em;
+    }
+
+    .edu-body {
+        font-size: 0.8em;
+    }
 }
