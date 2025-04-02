@@ -1,88 +1,214 @@
 *{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-body{
-    
-    font-family: 'Times New Roman', Times, serif;
-    background-color:rgb(255, 255, 255);
-}
-header h2{
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+
     align-items: center;
-    height:70px;
-    background-color: rgb(183, 16, 16);
+}
+
+body{
+    background-color: #b1a677;
+    align-items: center;
+    display: block;
+    justify-items: center;
+                      
+}
+h1{
+    font-weight: bold;
+    text-align: center;
     color: aliceblue;
-}.Navbar{
-    position:sticky;
-   top:-2px;
-    width: auto;
-    background-color: rgb(0, 0, 0);
-    color: azure;
-    letter-spacing: 1px;
-
-}
-.Navbar h2  {
-    display: flex;
-    
-}
-.Navbar ol {
-   
-    display: flex;
-    justify-content:center;
-   
-}
-.Navbar ol li{
-   
-    cursor: pointer;
-    list-style-type: none;
-    padding:20px;
-}
-.Navbar ol li a{
-    color: white;
-    text-decoration: none;
-    transition:0.1s;
-}
-.Navbar ol li a:hover{
-   
-    color: rgb(17, 156, 17);
-   
-    
-
-}
-table, td{
-    border: 1px solid rgb(121, 119, 119);
-    padding: 15px;
-    border-collapse: collapse;
-}
-
-span{
-    color: green;
-    font-size: 100%;
-    font-family: 'Times New Roman', Times, serif;
-}
-.name{
+    text-transform: uppercase;
     width: 50%;
-    height: 30px;
-    font-weight: 500;
-    font-size: small;
-    background-color: transparent;
+    background-color: rgb(92, 124, 124);
 }
-.PAN_number {
-    width: 30%;
-    height: 30px;
-    font-weight: 500;
-    font-size: small;
-    background-color: transparent;}
-button{
-    width: 100%;
-    height: 50px;
-    border: none;
-    letter-spacing: 5px;
-    cursor: pointer;
-    background-color: rgb(7, 139, 7);
-    transition: 1s;
-    border-radius: 10px;
+
+.main{
+    background-color: rgb(255, 255, 255);
+    align-items: left;
+    display: flex;
+    width: 50%;
+    justify-items: center;
+
+}
+.left-side{
+    padding-left: 6pt;
+    width: 40%;
+    display: block;
+    justify-items: left;
+}
+
+.cand-images img{
+    width: 50%;
+    margin: 2em;
+    border-bottom-right-radius: 6em;
+    border-bottom-left-radius: 6em;
+    
+}
+.left-side-content{
+    background-color: lightgray;
+    padding-left: 6pt;
+    margin-left: -6pt;
+    margin-top: -40pt;
+    padding-bottom: 6pt;
+    padding-right: 6pt;
+}
+h3{
+    margin-top: 25pt;
+    margin-bottom: -2pt;
+    font-size: 100%;
+}
+.edu1{
+    margin-top: 16pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    border-left: 2pt solid #D6AD08;
+
+}
+
+.edu-body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    margin-left: 6pt;
+}
+
+.edu-heading{
+    margin-top: 16pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80%;
+    font-weight: bold;
+    margin-left: 2pt;
+    text-transform: uppercase;
+}
+
+.right-side{
+    padding-left: 11pt;
+    width: 56%;
+    display: block;
+    padding-right: 10pt;
+
+}
+.cend-detalis {
+    align-items: right;
+    margin-top: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    justify-items: flex-end;
+    padding-right: 1em;
+    text-transform: uppercase;
+    
+}
+.cend-detalis p img{
+    max-width: 15pt;
+    height: 15px;
+    text-transform: lowercase;
+    image-resolution: 275dpi;
+
+}
+
+.hrizental-line{
+    border: 2px solid #D6AD08;
+    margin-top: 3em;
+}
+.exp{
+    margin-top: 12pt;
+    text-align: justify;
+}
+.skils-detalis{
+    margin-top: -12pt;
+    text-align: left;
+    column-count: 2;
+    column-gap: 30px;
+}
+.hobbi{
+    margin-top: -10pt;
+    text-align: left;
+}
+.footer{
+    
+    background-color: rgb(92, 124, 124);
+    width: 50%;
+    height: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    .main {
+        align-items: center;
+        width: 90%;
+        font-size: 90%;
+    }
+    h1{
+        width: 90%;
+    }
+    .footer{
+        width: 90%;
+    }
+
+    .left-side{
+        width: 60%;
+    }
+    .cend-detalis{
+        margin-top: 1rem;
+    }
+    .cand-images{
+        max-width: 75%;
+        height: 75%;
+    }
+    .left-side-content{
+        width: 95%;
+        margin-top: -18pt;
+    }
+    .right-side{
+        width: 85%;
+        font-size: 100%;
+        padding-left: 2pt;
+        padding-right: 6pt;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-side, .right-side {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .edu-heading {
+        font-size: 1em;
+    }
+
+    .edu-body {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .left-side, .right-side {
+        padding: 10px;
+        width: 100%;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+
+    .edu-heading {
+        font-size: 0.9em;
+    }
+
+    .edu-body {
+        font-size: 0.8em;
+    }
 }
